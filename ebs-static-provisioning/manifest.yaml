@@ -59,4 +59,4 @@ spec:
   ports:
   - protocol: tcp
     port: 80 # service-port
-    targetporrt: 80 # target port
+    targetport: 80 # target port
