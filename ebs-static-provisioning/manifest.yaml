@@ -57,6 +57,6 @@ spec:
     project: expense
     purpose: ebs-static
   ports:
-  - protocol: tcp
+  - protocol: TCP
     port: 80 # service-port
     targetport: 80 # target port
