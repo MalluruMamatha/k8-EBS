@@ -4,7 +4,7 @@ metadata:
   name: test-pv
 spec:
   accessModes:
-  - ReadWriteOnce ##3 means only one node can mount the volume at a time either read/write
+  - ReadWriteOnce ## means only one node can mount the volume at a time either read/write
   capacity:
     storage: 100Gi
   csi:
@@ -41,6 +41,7 @@ spec:
       mountPath: /usr/share/nginx/html
   # nodeSelector:
   #   topology.kubernetes.io/zone: us-east-1c
+### this means volume can be send it to the node which is created in us-east-1c AZ
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
